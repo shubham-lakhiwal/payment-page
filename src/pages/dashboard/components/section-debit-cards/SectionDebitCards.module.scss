@@ -9,6 +9,9 @@
 }
 
 .visibility-cta {
+  display: flex;
+  gap: spacing(1.5);
+  cursor: pointer;
   margin-bottom: spacing(3);
   color: $aspire-green;
 }
@@ -40,6 +43,33 @@
 
   .cards-wrapper, .cards-cta-wrapper {
     width: spacing(89);
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .cards-cta-wrapper {
+    margin: spacing(12) 0 0;
+    width: 100%;
+    border-radius: spacing(5);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .transactions-wrapper {
+    padding: 0 spacing(6) spacing(15);
+    background-color: $white;
+  }
+
+  .visibility-cta {
+    margin-bottom: spacing(-2.5);
+    padding: spacing(1.5) spacing(2.5) spacing(4) spacing(2.5);
+    background-color: $white;
+    border-top-right-radius: spacing(1.5);
+    border-top-left-radius: spacing(1.5);
+
+    &-text {
+      font-weight: 600;
+    }
   }
 }
 

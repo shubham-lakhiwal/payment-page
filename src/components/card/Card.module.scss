@@ -62,6 +62,7 @@
 @media (max-width: $breakpoint-xl) {
   .card {
     padding: spacing(6);
+    border: none;
   }
 
   .owner-name, .number {

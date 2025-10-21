@@ -16,10 +16,12 @@ const SectionDebitCards = () => {
     <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
       <div className={styles.cardsWrapper}>
         <div className={styles.visibilityCtaWrapper}>
-          <EyeIcon />
-          <Text className={styles.visibilityCta} weight="bold" size="small">
-            Show card number
-          </Text>
+          <div className={styles.visibilityCta}>
+            <EyeIcon />
+            <Text weight="bold" size="small" className={styles.visibilityCtaText}>
+              Show card number
+            </Text>
+          </div>
         </div>
         {cards ? <CardsCarousal cards={cards} /> : ''}
       </div>

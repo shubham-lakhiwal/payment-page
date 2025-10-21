@@ -36,3 +36,28 @@
   background-color: $aspire-green;
   border-radius: spacing(1);
 }
+
+@media (max-width: $breakpoint-sm) {
+  .content {
+    padding: 0;
+    background-color: $aspire-dark-blue;
+  }
+
+  .header {
+    padding: spacing(6);
+    color: $white;
+  }
+
+  .section {
+    margin-top: spacing(1.5);
+  }
+
+  button.add-card-button {
+    color: $aspire-green;
+    background-color: transparent;
+
+    path {
+      fill: $aspire-green;
+    }
+  }
+}

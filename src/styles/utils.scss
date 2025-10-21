@@ -1,3 +1,9 @@
+@media (max-width: $breakpoint-sm) {
+  .hide-xs {
+    display: none !important;
+  }
+}
+
 @media (max-width: $breakpoint-md) {
   .hide-sm {
     display: none !important;

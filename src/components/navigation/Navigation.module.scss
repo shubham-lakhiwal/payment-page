@@ -25,6 +25,12 @@
   margin-top: spacing(16);
 }
 
+.bottom-menu {
+  display: none;
+  margin-top: 0;
+  z-index: 2;
+}
+
 @media (max-width: $breakpoint-xl) {
   .left-sidebar {
     padding: spacing(4);
@@ -42,5 +48,33 @@
 @media (max-width: $breakpoint-lg) {
   .left-sidebar {
     padding: spacing(3);
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .navigation {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    color: $grey3;
+
+    .text {
+      display: block;
+    }
+
+    path {
+      fill: $grey3;
+    }
+  }
+
+  .bottom-menu {
+    display: initial;
+    position: fixed;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: auto;
+    padding: spacing(3) spacing(6);
+    background-color: $white;
+    box-shadow: 0 -3px 6px #00000014;
   }
 }

@@ -29,4 +29,21 @@
   .nav-icon {
     margin: auto;
   }
+  .text {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .nav-link {
+    flex-direction: column;
+    color: $grey3;
+  }
+  .text {
+    display: block;
+    margin-top: spacing(1);
+  }
+  .nav-item {
+    margin-bottom: spacing(1);
+  }
 }

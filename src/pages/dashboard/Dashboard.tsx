@@ -25,9 +25,9 @@ const Dashboard = () => {
     getAllCards()
   }, [])
 
-  return <main className={`${styles.content} col-xl-9 offset-xl-3 col-lg-11 offset-lg-1 col-md-11 offset-md-1`}>
+  return <main className={`${styles.content} col-xl-9 offset-xl-3 col-lg-11 offset-lg-1 col-md-11 offset-md-1 col-sm-11 offset-sm-1 col-xs-12 offset-xs-0`}>
     <div className="container">
-      <header>
+      <header className={styles.header}>
         <Text>Available Balance</Text>
         <div className={styles.mainHeader}>
           <div className={styles.balanceWrapper}>
@@ -40,6 +40,7 @@ const Dashboard = () => {
             text="New Card"
             icon={AddIcon}
             onClick={toggleModal}
+            className={styles.addCardButton}
           />
         </div>
       </header>
