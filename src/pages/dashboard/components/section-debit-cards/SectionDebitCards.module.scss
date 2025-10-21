@@ -3,18 +3,6 @@
   flex-direction: row;
 }
 
-.left-col {
-  /*TODO: Remove width*/
-  flex: 1;
-  width: 50%;
-}
-
-.right-col {
-  /*TODO: Remove width*/
-  flex: 1;
-  width: 50%;
-}
-
 .cards-wrapper, .cards-cta-wrapper {
   width: spacing(104);
   margin: 0 auto;
@@ -45,9 +33,9 @@
   padding-left: spacing(11.5)
 }
 
-@media (max-width: $breakpoint-lg) {
+@media (max-width: $breakpoint-xl) {
   .transactions-wrapper {
-    padding-left: spacing(8)
+    padding-left: 0;
   }
 
   .cards-wrapper, .cards-cta-wrapper {

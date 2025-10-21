@@ -3,17 +3,6 @@
   padding: spacing(15);
 }
 
-.flex-content {
-  width: 900px;
-  margin: 0 auto;
-}
-
-@media (max-width: $breakpoint-xl) {
-  .flex-content {
-    width: auto;
-  }
-}
-
 .section {
   margin-top: spacing(8.5);
 }
@@ -41,8 +30,8 @@
   width: spacing(10);
   height: spacing(6);
   padding: spacing(0.5);
-  text-align: center;
   font-weight: bold;
+  text-align: center;
   color: $white;
   background-color: $aspire-green;
   border-radius: spacing(1);

@@ -1,5 +1,4 @@
 :root {
-  --gutter: 1rem;
   --container-sm: 540px;
   --container-md: 720px;
   --container-lg: 960px;
@@ -14,10 +13,7 @@ $breakpoint-xl: 1365px;
 /* Containers */
 .container, .container-fluid {
   width: 100%;
-  padding-left: calc(var(--gutter) / 2);
-  padding-right: calc(var(--gutter) / 2);
-  //margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   box-sizing: border-box;
 }
 @media (min-width: $breakpoint-sm) {
@@ -37,24 +33,10 @@ $breakpoint-xl: 1365px;
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(var(--gutter) / -2);
-  margin-right: calc(var(--gutter) / -2);
   box-sizing: border-box;
 }
 .row > * {
-  padding-left: calc(var(--gutter) / 2);
-  padding-right: calc(var(--gutter) / 2);
   box-sizing: border-box;
-}
-
-/* Base columns */
-.col {
-  flex: 1 0 0;
-  min-width: 0;
-}
-.col-auto {
-  flex: 0 0 auto;
-  width: auto;
 }
 
 /* 12-column fractions */
@@ -175,7 +157,7 @@ $breakpoint-xl: 1365px;
 }
 
 /* Responsive columns - small and up */
-@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-md) {
   .col-sm   { flex: 1 0 0; min-width: 0; }
   .col-sm-1  { flex: 0 0 8.333333%;  max-width: 8.333333%;  }
   .col-sm-2  { flex: 0 0 16.666667%; max-width: 16.666667%; }
@@ -203,25 +185,3 @@ $breakpoint-xl: 1365px;
   .offset-sm-10 { margin-left: 83.333333%; }
   .offset-sm-11 { margin-left: 91.666667%; }
 }
-
-/* Gutters (set per-row) */
-.row.g-0 { --gutter: 0; margin-left: 0; margin-right: 0; }
-.row.g-1 { --gutter: 0.25rem; }
-.row.g-2 { --gutter: 0.5rem; }
-.row.g-3 { --gutter: 1rem; }
-.row.g-4 { --gutter: 1.5rem; }
-.row.g-5 { --gutter: 3rem; }
-
-
-/* Utilities: ordering and alignment */
-.order-first { order: -1; }
-.order-last  { order: 1;  }
-.order-0     { order: 0;  }
-
-.align-items-start  { align-items: flex-start; }
-.align-items-center { align-items: center;     }
-.align-items-end    { align-items: flex-end;   }
-.justify-content-center { justify-content: center; }
-
-/* Small niceties */
-.row > [class*="col-"], .row > .col { min-height: 1px; }

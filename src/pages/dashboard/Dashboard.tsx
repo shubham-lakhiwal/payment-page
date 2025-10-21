@@ -26,7 +26,7 @@ const Dashboard = () => {
   }, [])
 
   return <main className={`${styles.content} col-xl-9 offset-xl-3 col-lg-11 offset-lg-1 col-md-11 offset-md-1`}>
-    <div className={styles.flexContent}>
+    <div className="container">
       <header>
         <Text>Available Balance</Text>
         <div className={styles.mainHeader}>

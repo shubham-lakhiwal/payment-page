@@ -6,8 +6,6 @@ export type CardDetailsDTO = {
   expiry: string;
   cvv: string;
   brand?: CardBrand;
-  masked?: boolean;
-  className?: string;
 };
 
 export type CardDetailsType = {
