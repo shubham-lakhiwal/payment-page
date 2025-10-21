@@ -12,8 +12,8 @@ import {useCardsStore} from "@/domains/cards/useCardStore.ts";
 const SectionDebitCards = () => {
   const { cards } = useCardsStore()
 
-  return <div className={styles.myCardsWrapper}>
-    <div className="col-xl-6 col-lg-6 col-md-7 col-sm-7">
+  return <div className={`${styles.myCardsWrapper} row`}>
+    <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
       <div className={styles.cardsWrapper}>
         <div className={styles.visibilityCtaWrapper}>
           <EyeIcon />
@@ -27,7 +27,7 @@ const SectionDebitCards = () => {
         <CardsCta />
       </div>
     </div>
-    <div className={`col-xl-6 col-lg-6 col-md-5 col-sm-5 ${styles.transactionsWrapper}`}>
+    <div className={`col-xl-6 col-lg-6 col-md-12 col-sm-12 ${styles.transactionsWrapper}`}>
       <Collapsible heading={"Card details"} icon={CardDetailsIcon}>
         <Text>Nothing here</Text>
       </Collapsible>

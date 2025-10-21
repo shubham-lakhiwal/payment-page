@@ -8,7 +8,7 @@ import {NAV_ITEMS} from "@/components/navigation/constants.ts";
 
 const Navigation: React.FC = () => {
   return (
-    <div className={`col-xl-3 col-lg-1 ${styles.leftSidebar} hide-md`}>
+    <div className={`col-xl-3 col-lg-1 col-md-1 ${styles.leftSidebar} hide-sm`}>
       <div>
         <Logo className={`${styles.logo} hide-lg`} />
         <LogoSm className={`${styles.logo} hide-xl`} />

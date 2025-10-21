@@ -25,7 +25,7 @@ const Dashboard = () => {
     getAllCards()
   }, [])
 
-  return <main className={`${styles.content} offset-lg-1 col-lg-11 offset-xl-3 col-xl-9`}>
+  return <main className={`${styles.content} col-xl-9 offset-xl-3 col-lg-11 offset-lg-1 col-md-11 offset-md-1`}>
     <div className={styles.flexContent}>
       <header>
         <Text>Available Balance</Text>

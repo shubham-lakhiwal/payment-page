@@ -24,3 +24,9 @@
   align-items:  center;
   color: $white;
 }
+
+@media (max-width: $breakpoint-xl) {
+  .nav-icon {
+    margin: auto;
+  }
+}

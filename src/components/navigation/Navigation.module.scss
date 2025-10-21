@@ -27,9 +27,20 @@
 
 @media (max-width: $breakpoint-xl) {
   .left-sidebar {
-    padding: spacing(6);
+    padding: spacing(4);
   }
   .navigation {
     margin-top: spacing(40);
+  }
+
+  .logo {
+    width: spacing(9);
+    height: auto;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .left-sidebar {
+    padding: spacing(3);
   }
 }
