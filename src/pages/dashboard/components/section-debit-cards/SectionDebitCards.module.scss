@@ -1,0 +1,47 @@
+.my-cards-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-col {
+  /*TODO: Remove width*/
+  flex: 1;
+  width: 50%;
+}
+
+.right-col {
+  /*TODO: Remove width*/
+  flex: 1;
+  width: 50%;
+}
+
+.cards-wrapper, .cards-cta-wrapper {
+  width: spacing(104);
+  margin: 0 auto;
+}
+
+.visibility-cta {
+  margin-bottom: spacing(3);
+  color: $aspire-green;
+}
+
+.visibility-cta-wrapper {
+  display:  flex;
+  justify-content: flex-end;
+  gap: spacing(1.5);
+  cursor: pointer;
+}
+
+.cards-cta-wrapper {
+  display: flex;
+  gap: spacing(5);
+  margin-top: spacing(14);
+  padding: spacing(5) spacing(7);
+  background-color: $aspire-blue-light;
+  border-radius: spacing(3);
+}
+
+.transactions-wrapper {
+  padding-left: spacing(11.5)
+}
+

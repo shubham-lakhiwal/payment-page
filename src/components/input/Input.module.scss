@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: spacing(3);
+}
+
+.error {
+  color: red;
+}

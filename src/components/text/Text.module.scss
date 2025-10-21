@@ -1,0 +1,41 @@
+.text {
+  font-family: 'Open Sans', sans-serif;
+
+  &--small {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &--medium {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &--large {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &--xlarge {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &--xxlarge {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--regular {
+    font-weight: 500;
+  }
+
+  &--book {
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,22 @@
+.carousel {
+  width: auto;
+
+  :global(.carousel.carousel-slider) {
+    overflow: initial;
+  }
+
+  :global(ul.control-dots) {
+    bottom: spacing(-9);
+
+    :global(li.dot) {
+      box-shadow: none;
+      background-color: $aspire-green;
+    }
+
+    :global(li.dot.selected) {
+      width: spacing(4);
+      border-radius: spacing(1);
+    }
+  }
+
+}

@@ -1,0 +1,15 @@
+@media (min-width: $breakpoint-sm) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .hide-md {
+    display: none !important;
+  }
+
+  .hide-sm {
+    display: initial !important;
+  }
+}

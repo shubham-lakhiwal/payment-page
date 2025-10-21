@@ -1,0 +1,26 @@
+.nav-item {
+  margin-bottom: spacing(15);
+  list-style: none;
+
+  &.active, &:hover {
+    .nav-link {
+      color: $aspire-green;
+      font-weight: bold;
+    }
+
+    .nav-icon path {
+      fill: $aspire-green;
+    }
+  }
+}
+
+.nav-icon {
+  height: spacing(6);
+  margin-right: spacing(4);
+}
+
+.nav-link {
+  display: flex;
+  align-items:  center;
+  color: $white;
+}

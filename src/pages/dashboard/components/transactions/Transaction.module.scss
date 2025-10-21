@@ -1,0 +1,73 @@
+.wrapper {
+  padding: 0 spacing(6);
+}
+
+.details {
+  padding: spacing(6) 0;
+  border-bottom: 1px solid $border-light;
+}
+
+.activity {
+  display:  flex;
+  justify-content: center;
+  align-items:  center;
+  gap: spacing(2);
+  margin-top: spacing(2.5);
+}
+
+.activity-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: spacing(5);
+  width: spacing(6);
+  background-color: $aspire-blue1;
+  border-radius: spacing(5);
+}
+
+.entertainment {
+  background-color: $aspire-red-light;
+}
+.travel {
+  background-color: $aspire-green-light;
+}
+.shopping {
+  background-color: $aspire-blue-light3;
+}
+
+.date {
+  color: $grey2;
+}
+
+.charges {
+  display: flex;
+  gap: spacing(2.5);
+  align-items: baseline;
+  margin-left: auto;
+}
+
+.credit {
+  color: $aspire-green;
+}
+
+.transaction {
+  display: flex;
+  gap: spacing(3)
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:  spacing(12);
+  width: spacing(12);
+  border-radius: spacing(6);
+}
+
+.view-all {
+  padding: spacing(4);
+  text-align: center;
+  color: $aspire-green;
+  background-color: $aspire-green-light2;
+  cursor:pointer;
+}

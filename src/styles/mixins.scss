@@ -1,0 +1,3 @@
+@function spacing($unit) {
+  @return $unit * 4px;
+}

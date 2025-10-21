@@ -1,0 +1,26 @@
+.left-sidebar {
+  position: fixed;
+  left:0; top: 0;
+  height: 100vh;
+  padding: spacing(12);
+  background-color: $aspire-dark-blue;
+}
+
+.logo {
+  width: spacing(31);
+  height: auto;
+
+  path {
+    fill: $aspire-green;
+  }
+}
+
+.tagline {
+  margin-top: spacing(5);
+  color: $white;
+  opacity: 0.3;
+}
+
+.navigation {
+  margin-top: spacing(16);
+}
