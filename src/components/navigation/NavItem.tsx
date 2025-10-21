@@ -11,7 +11,7 @@ const NavItem: React.FC<NavItemProps> = (props) => {
         className={styles.navLink} href={href}
       >
         <Icon className={styles.navIcon} aria-label={label} />
-        <Text size="large">{label}</Text>
+        <Text size="large" className="hide-lg">{label}</Text>
       </a>
     </li>
   )

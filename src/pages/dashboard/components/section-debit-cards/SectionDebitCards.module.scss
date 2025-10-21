@@ -45,3 +45,13 @@
   padding-left: spacing(11.5)
 }
 
+@media (max-width: $breakpoint-lg) {
+  .transactions-wrapper {
+    padding-left: spacing(8)
+  }
+
+  .cards-wrapper, .cards-cta-wrapper {
+    width: spacing(89);
+  }
+}
+

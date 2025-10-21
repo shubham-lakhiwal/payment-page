@@ -13,7 +13,7 @@
 .content {
   width: 90%;
   background-color: $white;
-  padding: 20px;
+  padding: spacing(8);
   border-radius: 8px;
   max-width: 500px;
 }
@@ -35,5 +35,5 @@
 }
 
 .body {
-  padding: spacing(5) 0;
+  padding: spacing(5) 0 0;
 }

@@ -1,4 +1,5 @@
 import Logo from '@/assets/icons/logo.svg?react';
+import LogoSm from '@/assets/icons/logo-sm.svg?react';
 import Text from "../text/Text";
 import React from 'react';
 import styles from './Navigation.module.scss';
@@ -7,10 +8,11 @@ import {NAV_ITEMS} from "@/components/navigation/constants.ts";
 
 const Navigation: React.FC = () => {
   return (
-    <div className={`col-xl-3 col-md-1 ${styles.leftSidebar}`}>
+    <div className={`col-xl-3 col-lg-1 ${styles.leftSidebar} hide-md`}>
       <div>
-        <Logo className={styles.logo} />
-        <Text className={styles.tagline}>Trusted way of banking for 3,000+ SMEs and startups in Singapore</Text>
+        <Logo className={`${styles.logo} hide-lg`} />
+        <LogoSm className={`${styles.logo} hide-xl`} />
+        <Text className={`${styles.tagline} hide-lg`}>Trusted way of banking for 3,000+ SMEs and startups in Singapore</Text>
       </div>
       <nav>
         <ul className={styles.navigation}>

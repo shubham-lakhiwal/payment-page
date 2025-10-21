@@ -15,7 +15,8 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose, title }):React
             &times;
           </button>
         </header>
-        <div className={styles.body}>{children}</div>
+        <div className={styles
+          .body}>{children}</div>
       </div>
     </div>,
     document.getElementById('modal-root') as HTMLElement

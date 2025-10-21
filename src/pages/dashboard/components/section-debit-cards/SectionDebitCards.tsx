@@ -13,7 +13,7 @@ const SectionDebitCards = () => {
   const { cards } = useCardsStore()
 
   return <div className={styles.myCardsWrapper}>
-    <div className="col-md-6">
+    <div className="col-xl-6 col-lg-6 col-md-7 col-sm-7">
       <div className={styles.cardsWrapper}>
         <div className={styles.visibilityCtaWrapper}>
           <EyeIcon />
@@ -27,7 +27,7 @@ const SectionDebitCards = () => {
         <CardsCta />
       </div>
     </div>
-    <div className={`col-md-6 ${styles.transactionsWrapper}`}>
+    <div className={`col-xl-6 col-lg-6 col-md-5 col-sm-5 ${styles.transactionsWrapper}`}>
       <Collapsible heading={"Card details"} icon={CardDetailsIcon}>
         <Text>Nothing here</Text>
       </Collapsible>

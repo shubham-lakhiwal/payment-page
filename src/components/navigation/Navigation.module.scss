@@ -24,3 +24,12 @@
 .navigation {
   margin-top: spacing(16);
 }
+
+@media (max-width: $breakpoint-xl) {
+  .left-sidebar {
+    padding: spacing(6);
+  }
+  .navigation {
+    margin-top: spacing(40);
+  }
+}

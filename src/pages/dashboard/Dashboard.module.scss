@@ -8,6 +8,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: $breakpoint-xl) {
+  .flex-content {
+    width: auto;
+  }
+}
+
 .section {
   margin-top: spacing(8.5);
 }

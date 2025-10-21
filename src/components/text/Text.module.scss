@@ -39,3 +39,12 @@
     font-weight: 400;
   }
 }
+
+@media (max-width: $breakpoint-lg) {
+  .text {
+    &--xxlarge {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+}

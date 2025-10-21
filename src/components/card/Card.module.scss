@@ -58,3 +58,24 @@
   width: spacing(16);
   height:  spacing(6);
 }
+
+@media (max-width: $breakpoint-lg) {
+  .card {
+    width: spacing(89);
+    padding: spacing(6);
+  }
+
+  .owner-name, .number {
+    margin-top: spacing(6);
+  }
+
+  .logo {
+    width: spacing(18.5);
+    height: auto;
+  }
+
+  .brand-logo {
+    width: spacing(15);
+    height: auto;
+  }
+}

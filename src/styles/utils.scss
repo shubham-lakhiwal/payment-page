@@ -1,15 +1,23 @@
-@media (min-width: $breakpoint-sm) {
+@media (max-width: $breakpoint-md) {
   .hide-sm {
     display: none !important;
   }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (max-width: $breakpoint-lg) {
   .hide-md {
     display: none !important;
   }
+}
 
-  .hide-sm {
-    display: initial !important;
+@media (max-width: $breakpoint-xl) {
+  .hide-lg {
+    display: none !important;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .hide-xl {
+    display: none !important;
   }
 }
