@@ -14,6 +14,7 @@ import {
 import Button from "@/components/button/Button.tsx";
 import {useCardsStore} from "@/domains/cards/useCardStore.ts";
 import {toast} from "react-toastify";
+import styles from "./AddNewCard.module.scss";
 
 const AddNewCard: React.FC<AddNewCardProps> = ({
     isOpen,
@@ -71,7 +72,7 @@ const AddNewCard: React.FC<AddNewCardProps> = ({
         <Input label="Card number" name="number" onChange={handleInputChange} value={cardDetails.number} error={cardErrors.number} />
         <Input label="Expiry" name="expiry" onChange={handleInputChange} value={cardDetails.expiry} error={cardErrors.expiry} />
         <Input label="CVV" name="cvv" onChange={handleInputChange} value={cardDetails.cvv} error={cardErrors.cvv} />
-        <Button text={loading ? 'Loading...' : 'Add Card'} disabled={loading} type="submit" />
+        <Button className={styles.buttonSubmit} text={loading ? 'Loading...' : 'Add Card'} disabled={loading} type="submit" />
       </form>
     </Modal>
   )

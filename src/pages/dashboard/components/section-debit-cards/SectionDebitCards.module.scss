@@ -33,16 +33,22 @@
 }
 
 .transactions-wrapper {
-  padding-left: spacing(11.5)
+  padding-left: spacing(10)
 }
 
 @media (max-width: $breakpoint-xl) {
   .transactions-wrapper {
-    padding-left: 0;
+    padding-left: spacing(5);
   }
 
   .cards-wrapper, .cards-cta-wrapper {
     width: spacing(89);
+  }
+}
+
+
+@media (max-width: $breakpoint-xl) {
+  .transactions-wrapper {
   }
 }
 
