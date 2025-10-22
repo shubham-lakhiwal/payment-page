@@ -8,6 +8,7 @@ import SectionDebitCards from "@/pages/dashboard/components/section-debit-cards/
 import React, {useCallback, useEffect, lazy, Suspense, type LazyExoticComponent} from "react";
 import {useCardsStore} from "@/domains/cards/useCardStore.ts";
 import type {AddNewCardProps} from "@/pages/dashboard/components/add-new-card/types.ts";
+import LogoSm from '@/assets/icons/logo-sm.svg?react';
 
 // Lazy load the Add new card modal
 const AddNewCard: LazyExoticComponent<React.FC<AddNewCardProps>>
@@ -28,6 +29,7 @@ const Dashboard = () => {
   return <main className={`${styles.content} col-xl-9 offset-xl-3 col-lg-11 offset-lg-1 col-md-11 offset-md-1 col-sm-11 offset-sm-1 col-xs-12 offset-xs-0`}>
     <div className="container">
       <header className={styles.header}>
+        <LogoSm  className={styles.logoSm} />
         <Text>Available Balance</Text>
         <div className={styles.mainHeader}>
           <div className={styles.balanceWrapper}>
@@ -49,7 +51,7 @@ const Dashboard = () => {
           <Tab label={"My debit cards"}>
             <SectionDebitCards />
           </Tab>
-          <Tab label={"All company cards"}>
+          <Tab className={styles.noData} label={"All company cards"} >
             Nothing to show here
           </Tab>
         </TabsPanel>

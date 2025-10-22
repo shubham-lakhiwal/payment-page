@@ -7,11 +7,19 @@
   margin-top: spacing(8.5);
 }
 
+.no-data {
+  padding: spacing(6);
+}
+
+.logo-sm {
+  display: none;
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: spacing(2);
+  margin-top: spacing(3);
 }
 
 .balance-wrapper {
@@ -41,6 +49,17 @@
   .content {
     padding: 0;
     background-color: $aspire-dark-blue;
+    height: 100vh;
+  }
+
+  .no-data {
+    color: $white;
+  }
+
+  .logo-sm {
+    float: right;
+    display:  block;
+    margin-top: spacing(-3);
   }
 
   .header {
