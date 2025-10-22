@@ -5,14 +5,17 @@ import React from 'react';
 import styles from './Navigation.module.scss';
 import NavItem from "@/organisms/navigation/NavItem.tsx";
 import {NAV_ITEMS} from "@/organisms/navigation/constants.ts";
+import {Link} from "react-router";
 
 const Navigation: React.FC = () => {
   return (
     <>
       <div className={`col-xl-3 col-lg-1 col-md-1 col-sm-1 ${styles.leftSidebar} hide-xs`}>
         <div>
-          <Logo className={`${styles.logo} hide-lg`} />
-          <LogoSm className={`${styles.logo} hide-xl`} />
+          <Link to="/">
+            <Logo className={`${styles.logo} hide-lg`} />
+            <LogoSm className={`${styles.logo} hide-xl`} />
+          </Link>
           <Text className={`${styles.tagline} hide-lg`}>Trusted way of banking for 3,000+ SMEs and startups in Singapore</Text>
         </div>
         <nav>

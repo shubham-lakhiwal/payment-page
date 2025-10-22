@@ -2,6 +2,7 @@ import styles from "./Transaction.module.scss";
 import Transaction from "@/pages/dashboard/components/transactions/Transaction.tsx";
 import type {TransactionProps} from "@/pages/dashboard/components/transactions/types.ts";
 import Text from "@/atoms/text/Text.tsx";
+import Button from "@/atoms/button/Button.tsx";
 
 const TRANSACTIONS: TransactionProps[] = [
   {
@@ -48,7 +49,7 @@ const Transactions: React.FC = () => {
       <div className={styles.wrapper}>
         {TRANSACTIONS.map(transaction => <Transaction key={transaction.id} {...transaction} />)}
       </div>
-      <Text weight="semibold" className={styles.viewAll}>View all card transactions</Text>
+      <Button className={styles.viewAll}><Text weight="semibold">View all card transactions</Text></Button>
     </>
   )
 }

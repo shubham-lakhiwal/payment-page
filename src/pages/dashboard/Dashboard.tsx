@@ -11,6 +11,7 @@ import type {AddNewCardProps} from "@/organisms/form-add-new-card/types.ts";
 import LogoSm from '@/assets/icons/logo-sm.svg?react';
 import {toast} from "react-toastify";
 import type {CardDetailsType} from "@/domains/cards/types.ts";
+import {Link} from "react-router";
 
 // Lazy load the Add new card modal
 const FormAddNewCard: LazyExoticComponent<React.FC<AddNewCardProps>>
@@ -41,7 +42,9 @@ const Dashboard = () => {
   return <main className={`${styles.content} col-xl-9 offset-xl-3 col-lg-11 offset-lg-1 col-md-11 offset-md-1 col-sm-11 offset-sm-1 col-xs-12 offset-xs-0`}>
     <div className="container">
       <header className={styles.header}>
-        <LogoSm  className={styles.logoSm} />
+        <Link className={styles.logoSm} to="/">
+          <LogoSm />
+        </Link>
         <Text>Available Balance</Text>
         <div className={styles.mainHeader}>
           <div className={styles.balanceWrapper}>

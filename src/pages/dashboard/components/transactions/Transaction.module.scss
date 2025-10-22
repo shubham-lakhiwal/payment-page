@@ -65,9 +65,14 @@
 }
 
 .view-all {
+  width: 100%;
   padding: spacing(4);
   text-align: center;
   color: $aspire-green;
   background-color: $aspire-green-light2;
   cursor:pointer;
+
+  &:hover {
+    background-color: $aspire-green-light2;
+  }
 }

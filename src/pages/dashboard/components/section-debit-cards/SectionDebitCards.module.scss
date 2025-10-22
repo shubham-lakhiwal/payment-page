@@ -14,6 +14,12 @@
   cursor: pointer;
   margin-bottom: spacing(3);
   color: $aspire-green;
+  background: transparent;
+  border: none;
+
+  &:hover {
+    background: transparent;
+  }
 }
 
 .visibility-cta-wrapper {
@@ -75,6 +81,10 @@
 
     &-text {
       font-weight: 600;
+    }
+
+    &:hover {
+      background: $white;
     }
   }
 }

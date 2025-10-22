@@ -8,6 +8,7 @@ import TransactionIcon from "@/assets/icons/transactions.svg?react";
 import CardDetailsIcon from "@/assets/icons/card-details.svg?react";
 import Transactions from "@/pages/dashboard/components/transactions/Transactions.tsx";
 import {useCardsStore} from "@/domains/cards/useCardStore.ts";
+import Button from "@/atoms/button/Button.tsx";
 
 const SectionDebitCards = () => {
   const { cards } = useCardsStore()
@@ -16,12 +17,12 @@ const SectionDebitCards = () => {
     <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
       <div className={styles.cardsWrapper}>
         <div className={styles.visibilityCtaWrapper}>
-          <div className={styles.visibilityCta}>
+          <Button className={styles.visibilityCta}>
             <EyeIcon />
             <Text weight="bold" size="small" className={styles.visibilityCtaText}>
               Show card number
             </Text>
-          </div>
+          </Button>
         </div>
         {cards ? <CardsCarousal cards={cards} /> : ''}
       </div>

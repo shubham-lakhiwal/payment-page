@@ -1,7 +1,7 @@
 import React from "react";
 
 export type ButtonProps = {
-  text: string;
+  text?: string;
   icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   onClick?: () => void;
   children?: React.ReactNode;

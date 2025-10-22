@@ -16,7 +16,7 @@ const stylesMapping: Record<NonNullable<ButtonProps['variant']>, string> = {
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
-  const { text, icon:Icon, onClick, variant, className, type, disabled } = {...defaultProps, ...props};
+  const { text, icon:Icon, onClick, variant, className, type, disabled, children } = {...defaultProps, ...props};
   return (
     <button
       className={`${styles.button} ${stylesMapping[variant as NonNullable<ButtonProps['variant']>]} ${className || ''}`}
@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = (props) => {
       type={type}
     >
       {Icon ? <div className={styles.icon}> <Icon /></div> : ''}
-      {text ? <Text>{text}</Text> : ''}
+      {text ? <Text>{text}</Text> : children}
     </button>
   )
 }
