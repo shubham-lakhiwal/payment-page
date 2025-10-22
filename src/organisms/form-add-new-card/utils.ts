@@ -1,4 +1,4 @@
-import type {CardDetails} from "@/pages/dashboard/components/add-new-card/types.ts";
+import type {CardDetails} from "./types.ts";
 
 function clearNumber (value = '') {
   return value.replace(/\D+/g, '')

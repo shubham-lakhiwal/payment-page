@@ -1,7 +1,7 @@
 import Input from "@/atoms/input/Input.tsx";
 import Modal from "@/organisms/modal/Modal.tsx";
 import React, {useState} from "react";
-import type {AddNewCardProps, CardDetails} from "@/pages/dashboard/components/add-new-card/types.ts";
+import type {AddNewCardProps, CardDetails} from "./types.ts";
 import {
   formatCreditCardNumber,
   formatCVC,
