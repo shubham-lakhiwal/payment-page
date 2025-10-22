@@ -42,8 +42,14 @@
   .text {
     display: block;
     margin-top: spacing(1);
+    font-size: 10px;
   }
   .nav-item {
     margin-bottom: spacing(1);
+    &.active {
+      .text {
+        font-weight: bold;
+      }
+    }
   }
 }
