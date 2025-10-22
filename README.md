@@ -1,11 +1,13 @@
-# Local Setup
+## Local Setup
 ```
 git clone git@github.com:shubham-lakhiwal/payment-page.git
 cd payment-page
 npm install
 npm run dev
 ```
-
+## Features
+- Since CRA has been deprecated, App is created using Vite + React + Typescript.
+- App uses atomic architecture in react.
 
 ## Links
 
@@ -34,4 +36,4 @@ https://shubham-lakhiwal.netlify.app
 
 ## Tradeoffs
 - Since desktop view was the *Main task* and responsiveness was *Nice to have*, the development was not done mobile first which should be an ideal case.
-- Being a small application, I decided to go with in house components rather than a component library, which can slow down the development in an ideal case.
+- Being a small application, I decided to go with in house components rather than a component library. This can slow down the development in an ideal case.
