@@ -9,6 +9,8 @@ npm run dev
 - Since CRA has been deprecated, App is created using Vite + React + Typescript.
 - App uses atomic architecture in react.
 - Lazy loading has been used for add new card dialog.
+- Zustand has been used for state management.
+- Currently, tab panel, collapsible, cards carousel(working) and Add new card(working) are interractive.
 
 ## Nice to have addressed
 - Responsive web design adapting to not just mobile but tablets as well and multiple screen sizes.
