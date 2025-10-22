@@ -22,9 +22,8 @@ export function formatCreditCardNumber (value: string): string {
 
 export function formatCVC (value: string): string {
   const clearValue = clearNumber(value)
-  let maxLength = 3
 
-  return clearValue.slice(0, maxLength)
+  return clearValue.slice(0, 3)
 }
 
 export function formatExpirationDate (value: string): string {
@@ -51,7 +50,7 @@ export const generateRandomExpiry = () => {
 }
 
 export const generateRandomName = () => {
-  var nameList = [
+  const nameList = [
     'Flying','Soar','Soaring','Power','Falling',
     'Fall','Jump','Cliff','Mountain','Rend','Red','Blue',
     'Green','Yellow','Gold','Demon','Demonic','Panda','Cat',

@@ -1,9 +1,7 @@
 import React from "react";
 
-const sizeOptions = ['small', 'medium', 'large', 'xlarge', 'xxlarge'];
-const weightOptions = ['bold', 'semibold', 'book', 'regular'];
-export type Size = typeof sizeOptions[number];
-export type Weight = typeof weightOptions[number];
+export type Size = 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge';
+export type Weight = 'bold' | 'semibold' | 'book' | 'regular';
 
 export type TextProps = {
   children?: React.ReactNode;
