@@ -18,7 +18,7 @@ function maskNumber(formattedCardNumber: string) {
       chars[i] = "•";
     }
   }
-  return chars.join("");
+  return chars.join("").split(' ').map((digit) => <span>{digit}</span>);
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -49,17 +49,18 @@ export const Card: React.FC<CardProps> = ({
         <Text size="xxlarge" weight="bold" >{name}</Text>
       </div>
 
-      <div
+      <Text
+        weight="bold"
         className={`${styles.number}`}
         aria-label="Card number"
       >
-        <Text weight="bold">{visibleNumber}</Text>
-      </div>
+        {visibleNumber}
+      </Text>
 
       <div className={styles.otherDetails}>
         <div className={`${styles.expiry}`}>
           <Text weight="bold">Thru:</Text>
-          <Text weight="bold" aria-label="Expiry date">
+          <Text weight="bold" aria-label="Expiry date" className={styles.expiryValue}>
             {expiry}
           </Text>
         </div>

@@ -27,9 +27,17 @@
 }
 
 .number {
+  display: flex;
+  gap: spacing(6);
   margin-top: spacing(7);
-  letter-spacing: spacing(2);
-  word-spacing: spacing(2);
+  letter-spacing: spacing(1);
+
+  span {
+    font-size: 28px;
+  }
+  span:last-child {
+    font-size: initial;
+  }
 }
 
 .other-details {
@@ -46,6 +54,10 @@
 .cvv-value {
   line-height:  spacing(7);
   letter-spacing:  spacing(1);
+}
+
+.expiry-value {
+  letter-spacing: spacing(1);
 }
 
 .card-bottom {
@@ -77,5 +89,9 @@
   .brand-logo {
     width: spacing(15);
     height: auto;
+  }
+
+  .number {
+    gap: spacing(4);
   }
 }
