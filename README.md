@@ -8,6 +8,11 @@ npm run dev
 ## Features
 - Since CRA has been deprecated, App is created using Vite + React + Typescript.
 - App uses atomic architecture in react.
+- Lazy loading has been used for add new card dialog.
+
+## Nice to have addressed
+- Responsive web design adapting to not just mobile but tablets as well and multiple screen sizes.
+- Add new card form validations added.
 
 ## Links
 
