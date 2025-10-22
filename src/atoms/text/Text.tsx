@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Text.module.scss'
-import type {Size, TextProps, Weight} from "@/components/text/types.ts";
+import type {Size, TextProps, Weight} from "@/atoms/text/types.ts";
 
 const classSizeMapping: Record<Size, string> = {
   small: styles.textSmall,

@@ -1,5 +1,5 @@
 import './App.css';
-import Navigation from "@/components/navigation/Navigation.tsx";
+import Navigation from "@/organisms/navigation/Navigation.tsx";
 import Dashboard from "@/pages/dashboard/Dashboard.tsx";
 import {ToastContainer} from "react-toastify";
 

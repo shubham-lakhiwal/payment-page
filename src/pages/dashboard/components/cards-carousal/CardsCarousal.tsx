@@ -1,6 +1,6 @@
 import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Card from "@/components/card/Card.tsx";
+import Card from "@/organisms/card/Card.tsx";
 import React from "react";
 import styles from "./CardsCarousal.module.scss";
 import type {cardsCarousalType} from "@/pages/dashboard/components/cards-carousal/types.ts";

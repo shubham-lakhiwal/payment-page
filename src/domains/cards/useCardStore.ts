@@ -5,7 +5,7 @@ import {fetchAllCards, saveNewCard} from "@/domains/cards/services/cards.ts";
 interface CardStoreType {
   cards: CardDetailsType[];
   loading: boolean;
-  addNewCard: (card:CardDetailsDTO) => Promise<void>;
+  addNewCard: (card:CardDetailsType) => Promise<void>;
   getAllCards: () => Promise<void>;
 }
 

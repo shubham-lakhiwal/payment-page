@@ -3,7 +3,7 @@ import DeactivateIcon from '@/assets/icons/card/deactivate.svg?react';
 import GpayIcon from '@/assets/icons/card/gpay.svg?react';
 import ReplaceIcon from '@/assets/icons/card/replace.svg?react';
 import SetLimitIcon from '@/assets/icons/card/set-limit.svg?react';
-import Text from '@/components/text/Text.tsx';
+import Text from '@/atoms/text/Text.tsx';
 import styles from "./CardsCta.module.scss";
 
 const CARDS_CTA = [

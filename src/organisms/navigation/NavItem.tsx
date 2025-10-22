@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "@/components/navigation/NavItem.module.scss";
-import Text from "@/components/text/Text.tsx";
-import type {NavItemProps} from "@/components/navigation/types.ts";
+import styles from "@/organisms/navigation/NavItem.module.scss";
+import Text from "@/atoms/text/Text.tsx";
+import type {NavItemProps} from "@/organisms/navigation/types.ts";
 import {Link} from "react-router";
 
 const NavItem: React.FC<NavItemProps> = (props) => {

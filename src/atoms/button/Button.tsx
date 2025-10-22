@@ -1,6 +1,6 @@
 import React from "react";
-import type {ButtonProps} from "@/components/button/types.ts";
-import Text from "@/components/text/Text.tsx";
+import type {ButtonProps} from "@/atoms/button/types.ts";
+import Text from "@/atoms/text/Text.tsx";
 import styles from "./Button.module.scss";
 
 const defaultProps: Partial<ButtonProps> = {

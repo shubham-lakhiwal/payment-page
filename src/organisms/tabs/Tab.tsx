@@ -1,5 +1,5 @@
 import React from 'react';
-import type {TabProps} from "@/components/tabs/types.ts";
+import type {TabProps} from "@/organisms/tabs/types.ts";
 
 const Tab: React.FC<TabProps> = ({ children, ...rest }) => {
   return <div {...rest}>{children}</div>

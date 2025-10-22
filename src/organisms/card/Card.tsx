@@ -2,8 +2,8 @@ import Logo from '@/assets/icons/logo.svg?react';
 import Visa from '@/assets/icons/card/visa.svg?react';
 import React from "react";
 import styles from "./Card.module.scss";
-import type { CardProps } from "@/components/card/types.ts";
-import Text from "@/components/text/Text.tsx";
+import type { CardProps } from "@/organisms/card/types.ts";
+import Text from "@/atoms/text/Text.tsx";
 
 function formatCardNumber(digits: string) {
   if (!digits) return "";
@@ -18,7 +18,9 @@ function maskNumber(formattedCardNumber: string) {
       chars[i] = "•";
     }
   }
-  return chars.join("").split(' ').map((digit) => <span>{digit}</span>);
+  return chars.join("").split(' ').map(
+    (digit, idx) => <span key={idx}>{digit}</span>
+  );
 }
 
 export const Card: React.FC<CardProps> = ({

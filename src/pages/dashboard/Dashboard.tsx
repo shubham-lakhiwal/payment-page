@@ -1,22 +1,24 @@
-import Text from "@/components/text/Text.tsx";
+import Text from "@/atoms/text/Text.tsx";
 import styles from "./Dashboard.module.scss";
-import Button from "@/components/button/Button.tsx";
+import Button from "@/atoms/button/Button.tsx";
 import AddIcon from '@/assets/icons/add.svg?react';
-import TabsPanel from "@/components/tabs/TabsPanel.tsx";
-import Tab from "@/components/tabs/Tab.tsx";
+import TabsPanel from "@/organisms/tabs/TabsPanel.tsx";
+import Tab from "@/organisms/tabs/Tab.tsx";
 import SectionDebitCards from "@/pages/dashboard/components/section-debit-cards/SectionDebitCards.tsx";
 import React, {useCallback, useEffect, lazy, Suspense, type LazyExoticComponent} from "react";
 import {useCardsStore} from "@/domains/cards/useCardStore.ts";
-import type {AddNewCardProps} from "@/pages/dashboard/components/add-new-card/types.ts";
+import type {AddNewCardProps} from "@/organisms/form-add-new-card/types.ts";
 import LogoSm from '@/assets/icons/logo-sm.svg?react';
+import {toast} from "react-toastify";
+import type {CardDetailsType} from "@/domains/cards/types.ts";
 
 // Lazy load the Add new card modal
-const AddNewCard: LazyExoticComponent<React.FC<AddNewCardProps>>
-  = lazy(() => import('@/pages/dashboard/components/add-new-card/AddNewCard.tsx'));
+const FormAddNewCard: LazyExoticComponent<React.FC<AddNewCardProps>>
+  = lazy(() => import('@/organisms/form-add-new-card/FormAddNewCard.tsx'));
 
 const Dashboard = () => {
   const [showAddCard, setShowAddCard] = React.useState(false);
-  const { getAllCards } = useCardsStore()
+  const { addNewCard, loading, getAllCards } = useCardsStore()
 
   const toggleModal = useCallback(() => {
     setShowAddCard(prevValue => !prevValue);
@@ -24,6 +26,16 @@ const Dashboard = () => {
 
   useEffect(() => {
     getAllCards()
+  }, [])
+
+  const handleSubmitCard = useCallback((cardDetails: CardDetailsType) => {
+    addNewCard(cardDetails)
+      .then(() => {
+        toast.success('New Card has been added succesfully')
+      }).catch(err => {
+      console.error(err)
+      toast.error(err?.message || 'Error adding new card');
+    }).finally(toggleModal)
   }, [])
 
   return <main className={`${styles.content} col-xl-9 offset-xl-3 col-lg-11 offset-lg-1 col-md-11 offset-md-1 col-sm-11 offset-sm-1 col-xs-12 offset-xs-0`}>
@@ -59,7 +71,7 @@ const Dashboard = () => {
     </div>
     {showAddCard &&
       <Suspense fallback={''}>
-        <AddNewCard isOpen close={toggleModal} />
+        <FormAddNewCard isOpen close={toggleModal} loading={loading} submitCard={handleSubmitCard} />
       </Suspense>
     }
   </main>;

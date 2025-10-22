@@ -3,7 +3,7 @@ import CardIcon from '@/assets/icons/menubar/card.svg?react';
 import CreditIcon from '@/assets/icons/menubar/credit.svg?react';
 import PaymentsIcon from '@/assets/icons/menubar/payments.svg?react';
 import SettingsIcon from '@/assets/icons/menubar/settings.svg?react';
-import type {NavItemProps} from "@/components/navigation/types.ts";
+import type {NavItemProps} from "@/organisms/navigation/types.ts";
 
 export const NAV_ITEMS: NavItemProps[] = [
   {

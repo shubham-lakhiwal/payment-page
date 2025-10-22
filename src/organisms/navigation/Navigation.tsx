@@ -1,10 +1,10 @@
 import Logo from '@/assets/icons/logo.svg?react';
 import LogoSm from '@/assets/icons/logo-sm.svg?react';
-import Text from "../text/Text";
+import Text from "@/atoms/text/Text.tsx";
 import React from 'react';
 import styles from './Navigation.module.scss';
-import NavItem from "@/components/navigation/NavItem.tsx";
-import {NAV_ITEMS} from "@/components/navigation/constants.ts";
+import NavItem from "@/organisms/navigation/NavItem.tsx";
+import {NAV_ITEMS} from "@/organisms/navigation/constants.ts";
 
 const Navigation: React.FC = () => {
   return (

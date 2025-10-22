@@ -1,5 +1,5 @@
 import styles from "@/pages/dashboard/components/transactions/Transaction.module.scss";
-import Text from "@/components/text/Text.tsx";
+import Text from "@/atoms/text/Text.tsx";
 import React from "react";
 import type {TransactionCategory, TransactionProps} from "@/pages/dashboard/components/transactions/types.ts";
 import EntertainmentIcon from '@/assets/icons/transaction/entertainment.svg?react';

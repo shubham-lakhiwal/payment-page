@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import type {ModalProps} from "@/components/modal/types.ts";
+import type {ModalProps} from "@/organisms/modal/types.ts";
 import styles from "./Modal.module.scss";
 
 const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose, title }):React.ReactPortal | null => {

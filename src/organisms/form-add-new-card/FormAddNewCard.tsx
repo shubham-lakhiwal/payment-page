@@ -1,5 +1,5 @@
-import Input from "@/components/input/Input.tsx";
-import Modal from "@/components/modal/Modal.tsx";
+import Input from "@/atoms/input/Input.tsx";
+import Modal from "@/organisms/modal/Modal.tsx";
 import React, {useState} from "react";
 import type {AddNewCardProps, CardDetails} from "@/pages/dashboard/components/add-new-card/types.ts";
 import {
@@ -10,17 +10,16 @@ import {
   generateRandomExpiry,
   generateRandomName,
   isValidCardData
-} from "./utils";
-import Button from "@/components/button/Button.tsx";
-import {useCardsStore} from "@/domains/cards/useCardStore.ts";
-import {toast} from "react-toastify";
-import styles from "./AddNewCard.module.scss";
+} from "./utils.ts";
+import Button from "@/atoms/button/Button.tsx";
+import styles from "./FormAddNewCard.module.scss";
 
 const AddNewCard: React.FC<AddNewCardProps> = ({
     isOpen,
     close,
+    loading = false,
+    submitCard
   }) => {
-  const { addNewCard, loading } = useCardsStore()
   const [cardDetails, setCardDetails] = useState<CardDetails>({
     number: formatCreditCardNumber(generateRandomNumber(16)),
     name: generateRandomName(),
@@ -56,13 +55,7 @@ const AddNewCard: React.FC<AddNewCardProps> = ({
       return
     }
 
-    addNewCard(cardDetails)
-      .then(() => {
-        toast.success('New Card has been added succesfully')
-      }).catch(err => {
-        console.error(err)
-        toast.error(err?.message || 'Error adding new card');
-      }).finally(close)
+    submitCard(cardDetails)
   }
 
   return (

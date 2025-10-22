@@ -1,6 +1,6 @@
 import styles from "./Collapsible.module.scss";
-import type {CollapsibleProps} from "@/components/collapsible/types.ts";
-import Text from "@/components/text/Text.tsx";
+import type {CollapsibleProps} from "@/molecules/collapsible/types.ts";
+import Text from "@/atoms/text/Text.tsx";
 import React, {useCallback, useState} from "react";
 import ArrowIcon from '@/assets/icons/down-arrow.svg?react';
 

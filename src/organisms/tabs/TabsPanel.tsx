@@ -1,7 +1,7 @@
 import React, {type ReactElement, useState} from 'react';
 import styles from './TabsPanel.module.scss';
-import type {TabProps, TabsPanelType} from "@/components/tabs/types.ts";
-import Button from "@/components/button/Button.tsx";
+import type {TabProps, TabsPanelType} from "@/organisms/tabs/types.ts";
+import Button from "@/atoms/button/Button.tsx";
 
 const TabsPanel: React.FC<TabsPanelType> = ({ children }) => {
   const [activeTab, setActiveTab] = useState(0); // State to track active tab index

@@ -1,7 +1,7 @@
 import styles from "./Transaction.module.scss";
 import Transaction from "@/pages/dashboard/components/transactions/Transaction.tsx";
 import type {TransactionProps} from "@/pages/dashboard/components/transactions/types.ts";
-import Text from "@/components/text/Text.tsx";
+import Text from "@/atoms/text/Text.tsx";
 
 const TRANSACTIONS: TransactionProps[] = [
   {
